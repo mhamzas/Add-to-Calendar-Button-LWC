@@ -71,8 +71,8 @@ export default class AddtoCal extends LightningElement {
 
             //Outlook
             this.outlook= encodeURI([
-                'https://outlook.live.com/owa/?path=/calendar/action/compose#',
-                'subject=' + (this.title || ''),
+                'https://outlook.live.com/owa/?path=/calendar/action/compose&rru=addevent',
+                '&subject=' + (this.title || ''),
                 '&startdt=' + (startTime || ''),
                 '&enddt=' + (endTime || ''),
                 '&body=' + (this.description || ''),
